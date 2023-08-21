@@ -1,14 +1,18 @@
+* {
+  color: white;
+  border: 1px solid white;
+}
+
 body {
   background-image: linear-gradient( rgb(20,20,20), rgb(40,40,40));
   background-attachment: fixed
 }
 
 nav {
-  border-bottom: 0.1em solid white;
+  /* border-bottom: 0.1em solid white; */
 }
 
 nav > * {
-  border: 3px solid red;
   padding: 1rem;
   color: white;
 }
