@@ -5,7 +5,9 @@
 
 body {
   background-image: linear-gradient( rgb(20,20,20), rgb(40,40,40));
-  background-attachment: fixed
+  background-attachment: fixed;
+  max-width: 60vw;
+  align-items: center;
 }
 
 nav {
@@ -23,4 +25,30 @@ footer {
 
 input, textarea {
   background-color: rgb(105, 105, 105);
+}
+
+.project-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lime;
+}
+
+#guess-what-logo {
+  max-width: 30vw;
+}
+
+.project-details {
+
+}
+
+.project-image {
+  max-width: 30vw;
+}
+
+caption {
+  margin: 10px 0;
+  padding: 10px 0px;
+  border: 2px solid rgba(255, 255, 255, 0.26);
+  max-width: 30vw;
 }
