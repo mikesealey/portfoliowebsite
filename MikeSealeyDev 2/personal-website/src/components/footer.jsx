@@ -1,9 +1,11 @@
 
 const Footer = () => {
+    const thisDate = new Date()
+
 
     return (
         <footer>
-            <h2>footer</h2>
+            <h4>© Mike Sealey, {thisDate.getFullYear()} - All opinions expressed here are my own</h4>
         </footer>
     )
 }

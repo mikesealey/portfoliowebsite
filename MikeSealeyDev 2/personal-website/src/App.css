@@ -1,6 +1,6 @@
 * {
   color: white;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 body {
@@ -14,9 +14,13 @@ nav {
 
 nav > * {
   padding: 1rem;
-  color: white;
+
 }
 
 footer {
-  color: white
+
+}
+
+input, textarea {
+  background-color: rgb(105, 105, 105);
 }
