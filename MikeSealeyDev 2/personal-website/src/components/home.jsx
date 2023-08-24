@@ -22,7 +22,7 @@ const Home = () => {
             <li><a href="https://twitter.com/SealeyMike/status/1577233136357736448" target="_blank">Twitter</a> </li>
             <li><a href="https://www.instagram.com/p/BfT0nOWDmoU/?utm_source=ig_web_copy_link" target="_blank">Instagram</a></li>
             <li><a href="https://www.youtube.com/@MikeSealey_nhhc" target="_blank">YouTube</a> </li>
-            <li><a href="./index.html" target="_blank">Recursion</a></li>
+            <li><a href="./" target="_blank">Recursion</a></li>
             <li>mike [at] mikesealey [dot] dev</li>
         </ul>
 

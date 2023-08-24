@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <h4>© Mike Sealey, {thisDate.getFullYear()} - All opinions expressed here are my own</h4>
+            <h6>© Mike Sealey, {thisDate.getFullYear()} - All opinions expressed here are my own</h6>
         </footer>
     )
 }

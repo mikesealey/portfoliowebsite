@@ -34,9 +34,6 @@ input, textarea {
   border: 1px solid lime;
 }
 
-#guess-what-logo {
-  max-width: 30vw;
-}
 
 .project-details {
 
@@ -51,4 +48,10 @@ caption {
   padding: 10px 0px;
   border: 2px solid rgba(255, 255, 255, 0.26);
   max-width: 30vw;
+}
+
+#suggestion-form {
+  border: 1px solid lime;
+  display: flex;
+  flex-direction: column;
 }

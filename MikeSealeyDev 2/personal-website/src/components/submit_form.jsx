@@ -19,7 +19,7 @@ const SubmitForm = () => {
 
     return (
         <div>
-            <form ref={form} onSubmit={sendSuggestion}>
+            <form id="suggestion-form" ref={form} onSubmit={sendSuggestion}>
                 <label>Name *</label>
                 <input type="text" name="user_name" required/>
                 <label>Email *</label>
