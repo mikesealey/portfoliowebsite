@@ -2,7 +2,7 @@
 const Woodwork = () => {
 
     return (
-        <div>
+        <div className="main-component">
             <article className="project-article">
                 <h1>Woodwork</h1>
                 <article>

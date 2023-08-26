@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Projects = () => {
 
     return (
-        <div>
+        <div className="main-component">
             <h1>Projects</h1>
             <h2><Link to="/projects/guess-what">Guess What</Link></h2>
             <p>Guess What - An extra-terrestrial twist on the classic board game Guess Who</p>

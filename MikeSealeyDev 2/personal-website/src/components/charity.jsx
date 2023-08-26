@@ -2,7 +2,7 @@
 const Charity = () => {
 
     return (
-        <div>
+        <div className="main-component">
             <h1>Charity Work</h1>
             <article>
                 <h2>Andy's Man Club</h2>

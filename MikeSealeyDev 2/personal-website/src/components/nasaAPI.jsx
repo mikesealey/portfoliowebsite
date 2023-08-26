@@ -2,7 +2,7 @@
 const NasaApi = () => {
 
     return (
-        <div>
+        <div className="main-component">
             <h2>Meteorites</h2>
             <p>
                 While on the Northcoders bootcamp we were introduced to React, and given a handful of APIs to choose from, and instructed to visualise the data.
