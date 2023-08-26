@@ -22,7 +22,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div>
-                    <img id="portrait" src="../src/assets/NC-Mike.jpg" alt="Mike Sealey, on graduation day from Northcoders, wearing a Northcoders hoodie"/>
+                    <img id="portrait" src={"../src/assets/NC-Mike.jpg"} alt="Mike Sealey, on graduation day from Northcoders, wearing a Northcoders hoodie"/>
                 </div>
             </div>
             <p>You can get in touch by filling out the form bellow, or finding me in various corners of the internet.</p>
