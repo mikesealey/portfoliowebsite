@@ -4,7 +4,7 @@ const Header = () => {
 
     return (
         <div id="header">
-            <h1>Mike Sealey, Developer</h1>
+            <h1>Mike Sealey, Developer <img id="header-emoji" src="/favicon.png"/> </h1>
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/projects">Coding Projects</Link>
