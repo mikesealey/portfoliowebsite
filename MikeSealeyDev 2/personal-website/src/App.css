@@ -1,18 +1,146 @@
-body {
-  background-image: linear-gradient( rgb(20,20,20), rgb(40,40,40));
-  background-attachment: fixed
-}
 
-nav {
-  border-bottom: 0.1em solid white;
-}
+/*
+Highlight - #C6D8FF
+Light blue - #71A9F7
+Ultra-Violet - #6B5CA5
+Deep Pink #72195A
+Beetroot - #4C1036
 
-nav > * {
-  border: 3px solid red;
-  padding: 1rem;
+*/
+
+* {
   color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body {
+  background-image: linear-gradient( #71A9F7, #6B5CA5);
+  /* background-image: linear-gradient(22deg, #6CCFF6, #6ccff680,); */
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 3px solid lime; */
+  padding: 10px;
+  margin: 10px;
+
 }
 
 footer {
-  color: white
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.267);
+  border-radius: 15px 0px 15px 0px;
+  border: 1px solid white;
+}
+
+@media screen and (min-width: 1000px) {
+  .main-component {
+    width: 60vw;
+  }
+  #suggestion-form {
+    max-width: 60%;
+    border: 10px solid blue;
+  }
+}
+
+.main-component {
+  border-radius: 15px 0px 15px 0px;
+  border: 1px solid white;
+  padding: 15px;
+  background-color: rgba(0, 255, 255, 0.2);
+  align-items: center;
+  max-width: 80vw;
+  margin: 15px 0px;
+}
+
+#header {
+  border-radius: 15px 0px 15px 0px;
+  max-width: 100vw;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+nav {
+  /* border-radius: 15px 0px 15px 0px; */
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+nav > * {
+  padding: 10px;
+  padding: 1rem;
+  border: 1px solid skyblue;
+  flex-grow: 1;
+  border-radius: 14px 0px 14px 0px;
+  /* border: 1px solid white; */
+  background-image: linear-gradient( #6B5CA5, #72195A);;
+}
+
+/* Highlight - #C6D8FF
+Light blue - #71A9F7
+Ultra-Violet - #6B5CA5
+Deep Pink #72195A
+Beetroot - #4C1036 */
+
+footer {
+
+}
+
+input, textarea {
+  background-color: rgb(105, 105, 105);
+}
+
+.project-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.project-details {
+
+}
+
+.project-image {
+  max-width: 30vw;
+}
+
+caption {
+  margin: 10px 0;
+  padding: 10px 0px;
+  border: 2px solid rgba(255, 255, 255, 0.26);
+  max-width: 30vw;
+}
+
+#suggestion-form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#greeting {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 1px solid white; */
+}
+
+#portrait {
+  margin: 10px 0px;
+  border-radius: 15px 0px 15px 0px;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  max-width: 90%;
 }
