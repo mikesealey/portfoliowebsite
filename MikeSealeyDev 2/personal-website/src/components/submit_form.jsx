@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser"
 const SubmitForm = () => {
     const form = useRef()
     const [sent, setSent] = useState(false)
-    const [sendError, setSentError] = useState(false)
+    const [sendError, setSendError] = useState(false)
 
     const sendSuggestion = (e) => {
         e.preventDefault()
@@ -12,9 +12,8 @@ const SubmitForm = () => {
         emailjs.sendForm("service_a933bh6", "template_ghoreol", form.current, "Q8OzWzm0kWGLRlnBU")
             .then((result) => {
                 setSent(true)
-                console.log(result.text)
             }, (error) => {
-                console.log(error.text)
+                setSendError(true)
             })
     }
 
@@ -31,7 +30,6 @@ const SubmitForm = () => {
             </form>
             {sent ? <p>Thanks for your submission</p> : null}
             {sendError ? <p>Something went wrong...</p> : null}
-            <div>{}</div>
         </div>
     )
 }

@@ -1,18 +1,20 @@
 import emailjs from "@emailjs/browser"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 
 const Contact = () => {
     const form = useRef()
+    const [sent, setSent] = useState(false)
+    const [sendError, setSendError] = useState(false)
 
     const contactForm = (e) => {
         e.preventDefault()
 
         emailjs.sendForm("service_a933bh6", "template_lbrbqlf", form.current, "Q8OzWzm0kWGLRlnBU")
-            .then((result) => {
-                console.log(result.text)
-            }, (error) => {
-                console.log(error.text)
-            })
+        .then((result) => {
+            setSent(true)
+        }, (error) => {
+            setSendError(true)
+        })
     } 
 
     return (
@@ -26,6 +28,8 @@ const Contact = () => {
                 <textarea name="message" required/>
                 <input type="submit" value="Send"/>
             </form>
+            {sent ? <p>Thanks for your submission</p> : null}
+            {sendError ? <p>Something went wrong...</p> : null}
         </div>
     )
 }
