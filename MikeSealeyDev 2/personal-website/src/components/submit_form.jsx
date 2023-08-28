@@ -1,21 +1,22 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 
 const SubmitForm = () => {
     const form = useRef()
+    const [sent, setSent] = useState(false)
+    const [sendError, setSentError] = useState(false)
 
     const sendSuggestion = (e) => {
         e.preventDefault()
 
         emailjs.sendForm("service_a933bh6", "template_ghoreol", form.current, "Q8OzWzm0kWGLRlnBU")
             .then((result) => {
+                setSent(true)
                 console.log(result.text)
             }, (error) => {
                 console.log(error.text)
             })
     }
-
-
 
     return (
         <div>
@@ -26,9 +27,11 @@ const SubmitForm = () => {
                 <input type="email" name="user_email" required/>
                 <label>Message</label>
                 <textarea name="message" />
-                <input type="submit" value="Send"/>
+                <input type="submit" value="Send" disabled={sent}/>
             </form>
-
+            {sent ? <p>Thanks for your submission</p> : null}
+            {sendError ? <p>Something went wrong...</p> : null}
+            <div>{}</div>
         </div>
     )
 }

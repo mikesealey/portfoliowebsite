@@ -15,12 +15,10 @@ Beetroot - #4C1036
 
 body {
   background-image: linear-gradient( #71A9F7, #6B5CA5);
-  /* background-image: linear-gradient(22deg, #6CCFF6, #6ccff680,); */
   background-attachment: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* border: 3px solid lime; */
   padding: 10px;
   margin: 10px;
 
@@ -56,13 +54,11 @@ footer {
   background-color: rgba(0, 255, 255, 0.2);
   align-items: center;
   margin: 15px 0px;
-  border: 1px solid lime;
 }
 
 #header {
   border-radius: 15px 0px 15px 0px;
   max-width: 100vw;
-  /* padding: 0px 10vw; */
   border: 1px solid white;
   display: flex;
   flex-direction: column;
