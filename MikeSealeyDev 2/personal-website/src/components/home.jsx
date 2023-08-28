@@ -18,7 +18,7 @@ const Home = () => {
                         I'm a full-stack developer looking for early career roles in the North West, North Wales. I'm happy to commute further for hybrid roles, and I'm very open to remote-work.
                     </p>
                     <p>
-                        Thank you for stopping by. Below are the broad-strokes of what you need to know about me; alternatively, please use the navigation bar above to see some more in-depth details. 
+                        Thank you for stopping by. Bellow are the broad-strokes of what you need to know about me; alternatively, please use the navigation bar above to see some more in-depth details. 
                     </p>
                 </div>
                 <div>
