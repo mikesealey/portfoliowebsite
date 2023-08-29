@@ -1,12 +1,12 @@
 import { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 
-const SubmitForm = () => {
+const SuggestionForm = () => {
     const form = useRef()
     const [sent, setSent] = useState(false)
     const [sendError, setSendError] = useState(false)
 
-    const sendSuggestion = (e) => {
+    const sendSuggestionForm = (e) => {
         e.preventDefault()
 
         emailjs.sendForm("service_a933bh6", "template_ghoreol", form.current, "Q8OzWzm0kWGLRlnBU")
@@ -18,8 +18,8 @@ const SubmitForm = () => {
     }
 
     return (
-        <div>
-            <form id="suggestion-form" ref={form} onSubmit={sendSuggestion}>
+        <div className="submission-form">
+            <form ref={form} onSubmit={sendSuggestionForm}>
                 <label>Name *</label>
                 <input type="text" name="user_name" required/>
                 <label>Email *</label>
@@ -34,4 +34,4 @@ const SubmitForm = () => {
     )
 }
 
-export default SubmitForm
+export default SuggestionForm

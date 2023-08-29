@@ -40,7 +40,6 @@ footer {
   }
   #suggestion-form {
     max-width: 60%;
-    border: 10px solid blue;
   }
   .project-image {
     width: 100%;
@@ -52,8 +51,11 @@ footer {
   border: 1px solid white;
   padding: 15px;
   background-color: rgba(0, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 15px 0px;
+  
 }
 
 #header {
@@ -132,18 +134,29 @@ caption {
   max-width: 80vw;
 }
 
-#suggestion-form {
-  max-width: 100%;
+form {
+  width: 100%;
   display: flex;
   flex-direction: column;
+
 }
+
+textarea {
+  resize: none;
+  height: 130px;
+}
+
+.submission-form {
+  display: flex;
+  justify-content: center;
+}
+
 
 #greeting {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* border: 1px solid white; */
 }
 
 #portrait {
@@ -167,3 +180,8 @@ h1 {
   max-height: 32px;
 }
 
+#thisId {
+  /* border: 1px solid fuchsia; */
+  width: 1000px;
+  background-color: black;
+}

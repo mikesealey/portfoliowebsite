@@ -1,11 +1,11 @@
-import SubmitForm from "./submit_form"
+import SuggestionForm from "./suggestionForm"
 
 const FavouriteInternet = () => {
 
     return (
         <div className="main-component">
-            <section>
-                <h4>My favourite bits of internet</h4>
+
+                <h2>My favourite bits of internet</h2>
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=AbSehcT19u0" target="_blank">Hal fixing a lightbulb - AKA an apt metaphor for technical debt</a> </li>
                     <li><a href="https://www.codenewbie.org/podcast" target="_blank">CodeNewbie Podcast</a> </li>
@@ -16,8 +16,9 @@ const FavouriteInternet = () => {
                     <li><a href="https://www.youtube.com/watch?v=uRGljemfwUE" target="_blank">The Website is Down...</a> </li>
                 </ul>
                 Missing something?
-                <SubmitForm/>
-            </section>
+
+            <SuggestionForm/>
+
         </div>
     )
 }

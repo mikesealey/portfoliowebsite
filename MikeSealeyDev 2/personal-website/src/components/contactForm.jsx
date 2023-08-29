@@ -1,12 +1,12 @@
 import emailjs from "@emailjs/browser"
 import { useRef, useState } from "react"
 
-const Contact = () => {
+const ContactForm = () => {
     const form = useRef()
     const [sent, setSent] = useState(false)
     const [sendError, setSendError] = useState(false)
 
-    const contactForm = (e) => {
+    const submitContactForm = (e) => {
         e.preventDefault()
 
         emailjs.sendForm("service_a933bh6", "template_lbrbqlf", form.current, "Q8OzWzm0kWGLRlnBU")
@@ -18,8 +18,8 @@ const Contact = () => {
     } 
 
     return (
-        <div id="contact-form">
-            <form id="contact-form" ref={form} onSubmit={contactForm}>
+        <div className="submission-form">
+            <form ref={form} onSubmit={submitContactForm}>
                 <label>Name *</label>
                 <input type="text" name="user_name" required/>
                 <label>Email *</label>
@@ -34,4 +34,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default ContactForm
