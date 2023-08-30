@@ -135,11 +135,13 @@ caption {
 }
 
 form {
-  width: 100%;
+  width: 400px;
   display: flex;
   flex-direction: column;
 
 }
+
+
 
 textarea {
   resize: none;
@@ -184,4 +186,26 @@ h1 {
   /* border: 1px solid fuchsia; */
   width: 1000px;
   background-color: black;
+}
+
+#gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid fuchsia;
+}
+
+.gallery-image {
+  max-width: 100%;
+}
+
+.gallery-button {
+  max-width: 100px;
+}
+
+#centre {
+  border: 1px solid lime;
+  flex-grow: 4;
+  max-width: 500px;
 }
