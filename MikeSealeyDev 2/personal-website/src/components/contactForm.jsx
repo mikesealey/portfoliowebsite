@@ -12,7 +12,9 @@ const ContactForm = () => {
         emailjs.sendForm("service_a933bh6", "template_lbrbqlf", form.current, "Q8OzWzm0kWGLRlnBU")
         .then((result) => {
             setSent(true)
+            setSendError(false)
         }, (error) => {
+            setSent(false)
             setSendError(true)
         })
     } 
@@ -21,12 +23,12 @@ const ContactForm = () => {
         <div className="submission-form">
             <form ref={form} onSubmit={submitContactForm}>
                 <label>Name *</label>
-                <input type="text" name="user_name" required/>
+                <input className="form-input" type="text" name="user_name" required/>
                 <label>Email *</label>
-                <input type="email" name="user_email" required/>
+                <input className="form-input" type="email" name="user_email" required/>
                 <label>Enquiry *</label>
-                <textarea name="message" required/>
-                <input type="submit" value="Send"/>
+                <textarea className="form-input" name="message" required/>
+                <input type="submit" className="form-submit" value="Send"/>
             </form>
             {sent ? <p>Thanks for your submission</p> : null}
             {sendError ? <p>Something went wrong...</p> : null}

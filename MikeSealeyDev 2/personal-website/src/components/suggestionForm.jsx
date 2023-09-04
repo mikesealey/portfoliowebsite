@@ -21,12 +21,12 @@ const SuggestionForm = () => {
         <div className="submission-form">
             <form ref={form} onSubmit={sendSuggestionForm}>
                 <label>Name *</label>
-                <input type="text" name="user_name" required/>
+                <input className="form-input" type="text" name="user_name" required/>
                 <label>Email *</label>
-                <input type="email" name="user_email" required/>
+                <input className="form-input" type="email" name="user_email" required/>
                 <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" disabled={sent}/>
+                <textarea className="form-input" name="message" />
+                <input type="submit" className="form-submit" value="Send" disabled={sent}/>
             </form>
             {sent ? <p>Thanks for your submission</p> : null}
             {sendError ? <p>Something went wrong...</p> : null}
