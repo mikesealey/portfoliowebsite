@@ -10,7 +10,7 @@ const Charity = () => {
 
                 In the spring of 2023 I was approached by the team and invited to come onboard as a volunteer facilitator, to help run the meetings and offer support to new and existing group members.
 
-                Learn more at <a href="https://andysmanclub.co.uk/">andysmanclub.co.uk</a> #ITSOKAYTOTALK
+                Learn more at <a href="https://andysmanclub.co.uk/"> andysmanclub.co.uk </a>#ITSOKAYTOTALK
                 </p>
                 <h2>Ben Rawson Exhibition Match</h2>
                 <p className="project-details">
